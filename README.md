@@ -13,7 +13,7 @@ Ask on Twitter [@ogiacomelli](http://twitter.com/ogiacomelli).
  
 ### How to improve it?
 
-Create a fork of [jumpstart](https://github.com/skahal/Buildron-Mod-Template/fork). 
+Create a fork of [Buildron-Mod-Template](https://github.com/skahal/Buildron-Mod-Template/fork). 
 
 Did you change it? [Submit a pull request](https://github.com/giacomelli/Buildron-Mod-Template/pull/new/master).
 
