@@ -1,0 +1,23 @@
+if [ "$1" == "mac" ]
+then
+  MODS_FOLDER="Buildron.app/Mods/"
+  ZIP_FOLDER="../../../"
+else
+  MODS_FOLDER="Mods/"
+  ZIP_FOLDER="../../"
+fi
+
+echo ================[ Packing JumpStartTemplate for $1
+./build.sh $1
+
+echo ================[ Compressing JumpStartTemplate
+pushd $PWD/../build/$1/$MODS_FOLDER >/dev/null
+zip -vrq $ZIP_FOLDER/JumpStartTemplate.$1.zip JumpStartTemplate -x "*.DS_Store" -x "*__instances__*" -x "*.pdb" -x "*.mdb"
+popd >/dev/null
+
+echo ================[ JumpStartTemplate package .zip available at build folder:
+pushd ../build >/dev/null
+ls JumpStartTemplate.$1.zip
+popd >/dev/null
+
+echo ================[ JumpStartTemplate pack done.
