@@ -1,9 +1,11 @@
+@echo off
+
 echo ================[ Starting packing mod to all platforms
-./pack.sh linux
-echo
-./pack.sh mac
-echo
-./pack.sh win
-echo
+call pack.cmd linux
+echo.
+call pack.cmd mac
+echo.
+pack.cmd win
+echo.
 
 echo ================[ Pack mod to all platforms done.

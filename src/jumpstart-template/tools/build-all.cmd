@@ -1,8 +1,9 @@
+@echo off
 echo ================[ Starting building mod to all platforms
-./build.sh linux
-echo
-./build.sh mac
-echo
-./build.sh win
-echo
+call build.cmd linux
+echo.
+call build.cmd mac
+echo.
+call build.cmd win
+echo.
 echo ================[ Build mod to all platforms done.
